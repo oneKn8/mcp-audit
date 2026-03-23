@@ -1,0 +1,20 @@
+[package]
+name = "mcp-audit"
+version = "0.1.0"
+edition = "2021"
+description = "Fast, local security scanner for MCP servers. Maps findings to OWASP MCP Top 10."
+license = "MIT"
+repository = "https://github.com/oneKn8/mcp-audit"
+keywords = ["mcp", "security", "scanner", "owasp", "ai"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+colored = "2"
+regex = "1"
+walkdir = "2"
+glob = "0.3"
+anyhow = "1"
