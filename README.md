@@ -1,6 +1,6 @@
 # mcp-audit
 
-**90% of MCP servers fail basic security checks. This tool finds out why.**
+**Most MCP servers ship without a security review. This tool runs one in seconds.**
 
 A fast, local, zero-dependency security scanner for MCP (Model Context Protocol) servers. Maps every finding to the [OWASP MCP Top 10](https://owasp.org/www-project-mcp-top-10/). No cloud APIs. No LLM calls. Just static analysis that runs in seconds.
 
@@ -11,7 +11,7 @@ A fast, local, zero-dependency security scanner for MCP (Model Context Protocol)
 
 ## Why
 
-Every developer using Claude Code, Cursor, or Windsurf with MCP servers is running unaudited code with filesystem, database, and cloud access. The ecosystem has 19,000+ servers, 30 CVEs filed in 60 days, and only 2.5% pass basic security review.
+Every developer using Claude Code, Cursor, or Windsurf with MCP servers is running unaudited code with filesystem, database, and cloud access. The ecosystem has thousands of servers and a growing list of CVEs, and most ship without any security review.
 
 Existing scanners require cloud API calls or LLM backends. mcp-audit runs entirely locally in milliseconds.
 
